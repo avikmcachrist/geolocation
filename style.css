@@ -1,0 +1,54 @@
+/* Align title to the center and apply glow */
+h1 {
+    text-align: center;
+    color: #ff9900; /* Changed title color */
+    font-size: 36px; 
+    animation: glowText 2s infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0; /* Added to remove default margin */
+}
+
+@keyframes glowText {
+    0%, 100% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 0 60px rgba(255, 153, 0, 0.7), 0 0 60px rgba(255, 153, 0, 0.5), 0 0 60px rgba(255, 153, 0, 0.3); /* Changed glow color */
+    }
+}
+
+p {
+    color: #ff9900; /* Changed paragraph color */
+    animation: glowText 1s infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 10px 0; /* Added to adjust margin */
+}
+
+#mapCanvas {
+    border: 2px solid #ff9900; /* Changed border color */
+    border-radius: 5px;
+    margin: 10px auto;
+    box-shadow: 0 0 90px rgba(255, 153, 0, 0.5); /* Changed shadow color */
+}
+
+button {
+    background-color: #007acc; /* Changed button background color */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    padding: 20px 40px; /* Adjusted padding */
+    font-size: 24px; /* Adjusted font size */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #e9e9e9;
+    color: #333333;
+}
